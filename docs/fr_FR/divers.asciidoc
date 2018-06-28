@@ -1,0 +1,20 @@
+=== Divers : Format des macros commandes
+
+Un fichier macro est constitué d'un ensemble de commandes qui peut être envoyé en une seule fois au périphérique.
+
+Les commandes sont stockées sous forme de liste au format suivant :
+
+  KEY~PAUSE| ... |KEY~PAUSE EOL
+  
+  où KEY    est égal au code de la touche à envoyer
+     ~      sert de séparateur
+     PAUSE  indique le temps d'attente en millisecondes avant envoi de la commande
+     |      définit le délimiteur de commandes
+     ...    la suite des commandes
+     |
+     KEY~PAUSE EOL dernière commande suivie d'un retour-chariot.
+     
+Lors des tests, il a été possible de définir le temps de pause minimum à 1200 millisecondes. Cependant, certaines actions peuvent nécessiter un temps d'attente plus important (par ex : touche SMART HUB).
+
+Si le temps de pause est trop court, il est possible que le téléviseur n'effectue pas les opérations attendues du fait de  leur désynchronisation.
+

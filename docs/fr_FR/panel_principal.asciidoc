@@ -1,0 +1,45 @@
+.1) [underline]#L'onglet *Principal*#
+
+Il comprend l'ensemble des touches les plus utilisées.
+
+image::../images/TvDomSamsung-image-7.jpg[] 
+
+
+
+Bouton d'arrêt du téléviseur
+
+image::../../desktop/modal/images/smg_bt_power.png[] 
+
+[NOTE]
+=====
+Les modèles de téléviseur avant 2014 (Legacy) ne peuvent être allumés par la télécommande TvDomSamsung. (Limitation Samsung, car il ne dispose pas de la fonction wake up on lane).
+par contre, cela est possible avec les modèles Samsung 2014 et suivants s'exécutant sous Tizen. dans ce cas, le bouton est une simple bascule qui éteint ou allume le téléviseur suivant l'état de celui-ci. 
+=====
+
+Les touches 0,1 ... à 9 permettent de changer de chaîne. Pour les chaînes  de n° plus grand que 9 appuyer sur plusieurs touches (en principe 2 maxi).
+
+Les touches de contrôle du son permettent d'augmenter ou diminuer le volume sonore.
+
+image::../../desktop/modal/images/smg_bt_volume_moins.png[]
+image::../../desktop/modal/images/smg_bt_volume_plus.png[]
+
+le bouton mute permet de réduire le volume sonore
+
+image::../../desktop/modal/images/smg_bt_mute.png[]
+
+Les touches de contrôle des chaînes permettent de passer à la chaîne suivante ou à la chaîne précédente.
+
+
+image::../../desktop/modal/images/smg_bt_next_ch.png[]
+image::../../desktop/modal/images/smg_bt_prev_ch.png[]
+
+ou bien retourner à la chaîne précédente
+
+image::../../desktop/modal/images/smg_bt_pre_ch.png[]
+
+Enfin , le bouton *source* permet de sélectionner la provenance du signal vidéo : antenne, prise HDMI, etc.
+
+image::../../desktop/modal/images/smg_bt_source.png[]
+
+[NOTE]
+Pour les boutons autres que les commandes de numéro de chaînes, il est possible d'utiliser un panneau de curseurs qui permet de naviguer dans les différents choix. Ce mode est présenté ultérieurement.

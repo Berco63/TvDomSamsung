@@ -1,0 +1,20 @@
+=== Les commandes
+
+.1 [underline]#L'onglet *Commandes*#
+
+Il comprend la plupart des touches que l'on peut trouver sur la télécommande Samsung d'origine.
+
+image::../images/TvDomSamsung-image-8.jpg[] 
+
+
+
+
+
+[NOTE]
+
+Il est possible suivant la touche sélectionnée (par ex MENU, GUIDE, etc .) d'avoir besoin d'utiliser des curseurs de déplacement (haut,bas, droite, gauche ou ENTREE). Pour cela, il suffit de cliquer just en dessous du trait de séparation des onglets pour faire apparaître le panneau de visualisation des curseurs.
+
+
+ 
+
+image::../images/TvDomSamsung-image-9.jpg[]
