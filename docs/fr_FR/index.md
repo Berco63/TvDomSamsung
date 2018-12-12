@@ -1,4 +1,4 @@
-TvDomSamsung
+TvDomSamsung : plugin permettant de commander à distance les Tv Samsung.
 
 # Description
 
