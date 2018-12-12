@@ -364,7 +364,7 @@ Les commandes sont stockées sous forme de liste au format suivant :
 
 # FAQ
 
-## Est-ce que le plugin est compatible avec mon téléviseur Samsung ?
+## Compatibilité avec mon téléviseur Samsung ?
 
 Pour les ***modèles antérieurs à 2014*** (nommés **legacy**). Les modèles fonctionnent correctement sur une communication  sur le port 55000.
 
