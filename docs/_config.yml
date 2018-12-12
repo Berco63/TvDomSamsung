@@ -1,5 +1,5 @@
 ---
-langs: [fr_FR,en_US,es_ES] 
+langs: [fr_FR,en_US,es_ES,de_DE] 
 baseurl: "/"
 sass:
   sass_dir: assets/css
@@ -17,8 +17,15 @@ exclude:
 - vendor
 plugins:
 - jekyll-seo-tag
-title: "Documentation TvDomSamsung"
-
-description: "Ceci est la documentation, du plugin TvDomSamsung : télécommande pour Smart TV Samsung."
-author: "Bernard COLLARDEY"
-
+title: "Documentation Jeedom"
+description: "Ceci est la documentation, lier à la solution domotique Jeedom."
+author: "Jeedom"
+image: https://www.jeedom.com/site/logo.png
+twitter:
+  username: Jeedom_domotic
+social:
+  name: Jeedom
+  links:
+    - https://twitter.com/Jeedom_domotic
+    - https://www.facebook.com/Jeedom-249936178537210/
+    - https://github.com/jeedom
