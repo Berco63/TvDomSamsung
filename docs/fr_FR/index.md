@@ -34,6 +34,8 @@ Pour un modèle Legacy, la page suivante est affichée.
 
 Pour un modèle Tizen, la page suivante est affichée. Ici, le nom de l'équipement crée sera **Tizen_TV**
 
+
+
 ![plugin-3A](../images/TvDomSamsung-image-3A.png)
 
 Complétez ensuite le panneau de configuration qui s'affiche avec les informations demandées : 
@@ -43,6 +45,10 @@ Complétez ensuite le panneau de configuration qui s'affiche avec les informatio
 
 
 ### Configuration détaillée, modèle Legacy
+
+Le panneau de configuration d'un modèle Legacy se présente ainsi :
+
+
 
 
 ![plugin-4](../images/TvDomSamsung-image-4.png)
@@ -107,6 +113,8 @@ Après affichage du Dashboard Jeedom, vous devriez trouver un nouveau widget cor
 ![plugin-6](../images/TvDomSamsung-image-6.png)
 
 ### Configuration détaillée, modèle Tizen
+
+Le panneau de configuration d'un modèle Tizen se présente ainsi :
 
 
 
