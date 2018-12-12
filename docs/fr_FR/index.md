@@ -360,8 +360,6 @@ Les commandes sont stockées sous forme de liste au format suivant :
 
 
 
-
-
 # FAQ
 
 ## Compatibilité avec mon téléviseur Samsung ?
@@ -679,3 +677,9 @@ Voici la liste des commandes qui peuvent être envoyées aux téléviseurs Samsu
 >Par exemple pour afficher le canal 18 sur votre TV il faut envoyer : KEY_1 puis KEY_8.
 >
 >
+
+
+
+# Changelog détaillé
+
+<https://bercolly.github.io/TvDomSamsung/fr_FR/changelog>
