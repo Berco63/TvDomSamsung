@@ -6,6 +6,8 @@ Le plugin TvDomSamsung sert à piloter une TV Samsung (*smart, connectée*) acce
 
 > Le plugin est associé à un widget spécifique (SamsungTv) qui est inclus dans le plugin. Ce widget est installé sur le dashboard et sert de lanceur au module télécommande.
 
+
+
 ## Le plugin
 
 Après avoir installé le plugin, il vous faut créer une occurrence en cliquant dans le menu plugin sur le sous-menu multimédia, puis Tv DomSamsung.
