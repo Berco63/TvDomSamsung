@@ -32,7 +32,7 @@ Pour un modèle Legacy, la page suivante est affichée.
 
 
 
-Pour un modèle Tizen, la page suivante est affichée. Ici, le nom de l'équipement crée sera **__Tizen_TV__**
+Pour un modèle Tizen, la page suivante est affichée. Ici, le nom de l'équipement crée sera **Tizen_TV**
 
 ![plugin-3A](../images/TvDomSamsung-image-3A.png)
 
