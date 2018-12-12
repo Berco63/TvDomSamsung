@@ -122,6 +122,8 @@
 
     var titlePlugin = title.charAt(0).toUpperCase() + title.substring(1).toLowerCase()
 
+	console.log ('content ' + $('#div_content').html());
+
     if(window.innerWidth < 992){
       $('#div_main').addClass('container');
       $('#div_content').toc({
@@ -146,6 +148,7 @@
    $('#div_summary  #toctitle').html('<h2 style="padding-left:5px !important;">'+titlePlugin+'</h2>');
    $('#div_summary2 #toctitle').html('<h2 style="padding-left:5px !important;">'+titlePlugin+'</h2>');
    $('#div_summary3 #toctitle').html('<h2 style="padding-left:5px !important;">'+titlePlugin+'</h2>');
+
    $('.toclevel-2').parent().css('color', 'blue');
  }
  var i = 1, j = 1;
