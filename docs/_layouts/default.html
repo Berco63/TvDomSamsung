@@ -122,28 +122,23 @@
 
     var titlePlugin = title.charAt(0).toUpperCase() + title.substring(1).toLowerCase()
 
-	console.log ('content ' + $('#div_content').html());
-
     if(window.innerWidth < 992){
       $('#div_main').addClass('container');
       $('#div_content').toc({
         renderIn : "#div_summary2",
         selectors : 'h1,h2,h3'
       });
-      console.log ('summary2 ' + $('#div_summary2').html());
     }else{
      $('#div_main').removeClass('container');
      $('#div_content').toc({
       renderIn : "#div_summary",
       selectors : 'h1,h2,h3'
     });
-    console.log ('summary ' + $('#div_summary').html());
    }
     $('#div_content').toc({
       renderIn : "#div_summary3",
       selectors : 'h1,h2,h3'
     });
-    console.log ('summary 3 ' + $('#div_summary3').html());
 
    $('#div_summary  #toctitle').html('<h2 style="padding-left:5px !important;">'+titlePlugin+'</h2>');
    $('#div_summary2 #toctitle').html('<h2 style="padding-left:5px !important;">'+titlePlugin+'</h2>');
