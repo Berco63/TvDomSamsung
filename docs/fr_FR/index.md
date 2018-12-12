@@ -1,12 +1,12 @@
-# TvDomSamsung
+TvDomSamsung
 
-## Description
+# Description
 
 Le plugin TvDomSamsung sert à piloter une TV Samsung (*smart, connectée*) acceptant un pilotage depuis des commandes émises sur le réseau local.
 
 > Le plugin est associé à un widget spécifique (SamsungTv) qui est inclus dans le plugin. Ce widget est installé sur le dashboard et sert de lanceur au module télécommande.
 
-### Le plugin
+## Le plugin
 
 Après avoir installé le plugin, il vous faut créer une occurrence en cliquant dans le menu plugin sur le sous-menu multimédia, puis Tv DomSamsung.
 
@@ -42,7 +42,7 @@ Complétez ensuite le panneau de configuration qui s'affiche avec les informatio
 
 
 
-### Configuration détaillée, modèle Legacy
+## Configuration détaillée, modèle Legacy
 
 Le panneau de configuration d'un modèle Legacy se présente ainsi :
 
@@ -110,7 +110,7 @@ Après affichage du Dashboard Jeedom, vous devriez trouver un nouveau widget cor
 
 ![plugin-6](../images/TvDomSamsung-image-6.png)
 
-### Configuration détaillée, modèle Tizen
+## Configuration détaillée, modèle Tizen
 
 Le panneau de configuration d'un modèle Tizen se présente ainsi :
 
@@ -183,7 +183,7 @@ Après affichage du Dashboard Jeedom, vous devriez trouver un nouveau widget cor
 
 
 
-## Présentation de la télécommande
+# Présentation de la télécommande
 
 La télécommande se présente sous forme d'une fenêtre présentant  plusieurs onglets :
 
@@ -195,7 +195,7 @@ Ces onglets sont présentés de façon détaillée, ci-dessous.
 
 
 
-### L'onglet Principal
+## L'onglet Principal
 
 Il comprend l'ensemble des touches les plus utilisées.
 
@@ -220,9 +220,6 @@ Cette touche sert à éteindre le téléviseur.
 
 
 
-
-
-
 > Les modèles de téléviseur avant 2014 (Legacy) ne peuvent être allumés par la télécommande TvDomSamsung. (Limitation Samsung, car il ne dispose pas de la fonction wake up on lan).
 >
 > Par contre, cela est possible avec les modèles Samsung 2014 et suivants s'exécutant sous Tizen. 
@@ -235,7 +232,7 @@ Les touches 0,1 ... à 9 permettent de changer de chaîne. Pour les chaînes  de
 
 Les touches de contrôle du son permettent d'augmenter ou diminuer le volume sonore.
 
-​						![../images/buttons/smg_bt_volume_moins.png](../images/buttons/smg_bt_volume_moins.png)![../images/buttons/smg_bt_volume_plus.png](../images/buttons/smg_bt_volume_plus.png)
+?						![../images/buttons/smg_bt_volume_moins.png](../images/buttons/smg_bt_volume_moins.png)![../images/buttons/smg_bt_volume_plus.png](../images/buttons/smg_bt_volume_plus.png)
 
 le bouton mute permet de réduire le volume sonore
 
@@ -243,7 +240,7 @@ le bouton mute permet de réduire le volume sonore
 
 Les touches de contrôle des chaînes permettent de passer à la chaîne suivante ou à la chaîne précédente.
 
-​								![../images/buttons/smg_bt_next_ch.png](../images/buttons/smg_bt_next_ch.png)![../images/buttons/smg_bt_prev_ch.png](../images/buttons/smg_bt_prev_ch.png)
+?								![../images/buttons/smg_bt_next_ch.png](../images/buttons/smg_bt_next_ch.png)![../images/buttons/smg_bt_prev_ch.png](../images/buttons/smg_bt_prev_ch.png)
 
 ou bien retourner à la chaîne précédente
 
@@ -261,7 +258,7 @@ Enfin , le bouton *source* permet de sélectionner la provenance du signal vidé
 
 
 
-### L'onglet commandes
+## L'onglet commandes
 
 Il comprend la plupart des touches que l'on peut trouver sur la télécommande Samsung d'origine.
 
@@ -282,7 +279,7 @@ Il comprend la plupart des touches que l'on peut trouver sur la télécommande S
 
 
 
-### L'onglet macros
+## L'onglet macros
 
 
 Cet onglet présente l'ensemble des macros que vous avez enregistrées, sous forme d'un tableau.
@@ -349,13 +346,13 @@ Les commandes sont stockées sous forme de liste au format suivant :
   KEY~PAUSE| ... |KEY~PAUSE EOL
 
   où KEY    est égal au code de la touche à envoyer
-​     ~      sert de séparateur
-​     PAUSE  indique le temps d'attente en millisecondes avant envoi de la commande
-​     |      définit le délimiteur de commandes
-​     ...    la suite des commandes
-​     |
-​     KEY~PAUSE EOL dernière commande suivie d'un retour-chariot.
-​     
+?     ~      sert de séparateur
+?     PAUSE  indique le temps d'attente en millisecondes avant envoi de la commande
+?     |      définit le délimiteur de commandes
+?     ...    la suite des commandes
+?     |
+?     KEY~PAUSE EOL dernière commande suivie d'un retour-chariot.
+?     
 
 > Lors des tests, il a été possible de définir le temps de pause minimum à 1200 millisecondes. Cependant, certaines actions peuvent nécessiter un temps d'attente plus important (par ex : touche SMART HUB).
 
@@ -365,13 +362,9 @@ Les commandes sont stockées sous forme de liste au format suivant :
 
 
 
+# FAQ
 
-
-
-
-## FAQ
-
-### Est-ce que le plugin est compatible avec mon téléviseur Samsung ?
+## Est-ce que le plugin est compatible avec mon téléviseur Samsung ?
 
 Pour les ***modèles antérieurs à 2014*** (nommés **legacy**). Les modèles fonctionnent correctement sur une communication  sur le port 55000.
 
@@ -388,7 +381,7 @@ Les modèles **J & H** restent **incompatibles** avec le plugin TvDomSamsung.
 
 Vous trouverez, sur le forum, une page consacrée au plugin TvDomSamsung. Des utilitaires sont à disposition pour vérifier la compatibilité de votre TV avec le plugin.
 
-### Problèmes rencontrés
+## Problèmes rencontrés
 
 Samsung a délivré une mise à jour du firmware de ses SmartTv modèle Tizen en Octobre 2018. 
 
@@ -397,9 +390,9 @@ Ce problème est en cours d'étude.  Il n'est pas recommandé d'acquérir le plu
 
 
 
-## Annexes
+# Annexes
 
-### Utilisation du plugin dans un scénario
+## Utilisation du plugin dans un scénario
 
 Les commandes suivantes sont utilisables dans un scénario :
 
@@ -411,18 +404,18 @@ Les commandes suivantes sont utilisables dans un scénario :
 
 - ***zap***        : changer de chaîne. fournir le canal à sélectionner sur deux digits. 
 
-  ​		Exemple -> zap 24. Demande affichage canal 24.
+  ?		Exemple -> zap 24. Demande affichage canal 24.
 
 - ***sendkey***  : envoi d'une commande au TV. 
 
-  ​		Le format d'envoi est le suivant : KEY_xx | KEY_xx | KEY_xx ...
-  ​		Par exemple, pour allumer le TV et passer au canal 41, il suffit d'envoyer : 
+  ?		Le format d'envoi est le suivant : KEY_xx | KEY_xx | KEY_xx ...
+  ?		Par exemple, pour allumer le TV et passer au canal 41, il suffit d'envoyer : 
 
-  ​               *sendkey KEY_POWERON | KEY_4 | KEY_1*
+  ?               *sendkey KEY_POWERON | KEY_4 | KEY_1*
 
 
 
-### Commandes disponibles
+## Commandes disponibles
 
 Voici la liste des commandes qui peuvent être envoyées aux téléviseurs Samsung (Smart TV).
 
