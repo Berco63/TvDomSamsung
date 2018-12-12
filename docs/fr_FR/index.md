@@ -24,7 +24,7 @@ Le panneau de saisie d'un nouvel équipement s'affiche alors :
 
 ![plugin-2](../images/TvDomSamsung-image-2.png)
 
-Cliquer sur ajouter `Legacy` ou `Tizen` suivant le modèle du Tv, puis renseigner le nom de l'équipement (par exemple, ici , **__Legacy_TV__**, puis validez votre choix.
+Cliquer sur ajouter `Legacy` ou `Tizen` suivant le modèle du Tv, puis renseigner le nom de l'équipement (par exemple, ici , **Legacy_TV**, puis validez votre choix.
 
 Pour un modèle Legacy, la page suivante est affichée.
 
