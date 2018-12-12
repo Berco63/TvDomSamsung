@@ -1,6 +1,4 @@
-:icons:
-
-# Plugin TvDomSamsung
+# TvDomSamsung
 
 ## Description
 
