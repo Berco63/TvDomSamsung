@@ -1,4 +1,3 @@
 **TvDomSamsung**
 
-
-Hello
+Plugin pour télécommander les Smart Tv Samsung.
