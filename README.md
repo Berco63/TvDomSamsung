@@ -10,7 +10,6 @@ Plugin pour télécommander les Smart Tv Samsung.
 <th align="center">Mode</th>
 <th align="center">Port</th>
 <th align="center">SSL</th>
-  
 <th align="center">Samsung Software</th>
 <th align="center">Year</th>
 </tr>
@@ -110,3 +109,4 @@ Plugin pour télécommander les Smart Tv Samsung.
 </table>
 
 * Depuis Octobre 2018, modèles Tizen avec connexion sur port 8002 en SSL.
+
