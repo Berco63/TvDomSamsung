@@ -4,6 +4,9 @@
 
 - Prise en compte du firmware d'Octobre 2018 pour les modèles de Tv Tizen.
   Pour ces modèles il faut configurer le port 8002 et le mode SSL.
+
+  > Si vous n'avez pas installé le dernier firmware sur votre Smart Tv Tizen , il faut rester sur le port 8001 SSL off.
+
 - Ajout d'une commande wake on lan, pour les modèles Tizen.
 
 # 1.0.B Version 01/12/2018
