@@ -91,18 +91,18 @@ Plugin pour télécommander les Smart Tv Samsung.
 <tr>
 <td align="center">Série M/Qled</td>
 <td align="center">Oui</td>
+<td align="center">webSocket</td>
 <td align="center">8001</td>
 <td align="center"></td>
-<td align="center">Socket</td>
 <td align="center">Tizen</td>
 <td align="center">2017</td>
 </tr>
 <tr>
 <td align="center">Série M/Qled *</td>
 <td align="center">Oui</td>
+<td align="center">webSocket</td>
 <td align="center">8002</td>
 <td align="center">SSL</td>
-<td align="center">Socket</td>
 <td align="center">Tizen</td>
 <td align="center">2017</td>
 </tr>
