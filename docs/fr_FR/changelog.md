@@ -1,5 +1,17 @@
 **Change Log**
 
+# 1.0.C Version 18/12/2018
+
+- Prise en compte du firmware d'Octobre 2018 pour les modèles de Tv Tizen.
+  Pour ces modèles il faut configurer le port 8002 et le mode SSL.
+- Ajout d'une commande wake on lan, pour les modèles Tizen.
+
+# 1.0.B Version 01/12/2018
+
+- Version intermédiaire, non diffusée.
+
+# 
+
 # 1.0.A Version 25/11/2018
 
 * Modèles `Legacy` série ES modification du protocole de communication: ajout d'une séquence d'authentification. 
