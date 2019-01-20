@@ -410,7 +410,7 @@ Les commandes suivantes sont utilisables dans un scénario :
 
   Une commande peut être constituée d'une ou de plusieurs actions. 
 
-  Si plusieurs actions sont à exécuter, elles sont séparées par | ( un pipe).
+  Si plusieurs actions sont à exécuter, elles sont séparées par &#124; ( un pipe).
 
   - envoi d'une commande simple	:
 
