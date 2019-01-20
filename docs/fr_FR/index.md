@@ -422,7 +422,7 @@ Les commandes suivantes sont utilisables dans un scénario :
 
     - Pour afficher une chaîne avec un n° > 9 la commande se présente ainsi:
 
-      *sendkey* KEY-1 &#124; KEY_8          : demande l'affichage de la chaîne 18                 
+      *sendkey* KEY_1 &#124; KEY_8          : demande l'affichage de la chaîne 18                 
 
 
 
