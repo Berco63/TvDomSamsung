@@ -418,17 +418,17 @@ Les commandes suivantes sont utilisables dans un scénario :
 
   - envoi d'un lot d'actions
 
-    - *sendkey* KEY_POWERON | KEY_1   : allume la tv et affiche la chaîne n° 1
+    - *sendkey* KEY_POWERON &#124; KEY_1   : allume la tv et affiche la chaîne n° 1
 
     - Pour afficher une chaîne avec un n° > 9 la commande se présente ainsi:
 
-      *sendkey* KEY-1 | KEY_8          : demande l'affichage de la chaîne 18                 
+      *sendkey* KEY-1 &#124; KEY_8          : demande l'affichage de la chaîne 18                 
 
 
 
   Par exemple, pour allumer le TV et passer au canal 41, il suffit d'envoyer : 
 
-  ​               *sendkey* KEY_POWERON | KEY_4 | KEY_1*
+  ​               *sendkey* KEY_POWERON &#124; KEY_4 &#124; KEY_1
 
 
 
