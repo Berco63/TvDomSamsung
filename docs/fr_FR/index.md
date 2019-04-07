@@ -437,19 +437,19 @@ Grosso modo l'appairage consiste à :
 
 L'appairage est réalisé à l'aide de la télécommande du plugin, 
 
-![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\githubDoc\docs\images\appairage_modeles_J_1.png)
+![plugin-app-01](../images/appairage_modeles_J_1.png)
 
 Il suffit de cliquer sur le bouton gris dans le coin supérieur droit de la télécommande. 
 
 Un écran de confirmation est affiché 
 
-![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\githubDoc\docs\images\appairage_modeles_J_2.png)
+![plugin-app-02](../images/appairage_modeles_J_2.png)
 
 Appuyez sur le bouton OK pour afficher la page de code pin sur la TV.
 
 Si la communication est établie avec la Tv, l'écran de saisie du code Pin est alors affiché :
 
-![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\githubDoc\docs\images\appairage_modeles_J_3.png)
+![plugin-app-03](../images/appairage_modeles_J_3.png)
 
 
 
@@ -480,7 +480,7 @@ Saisir le code pin, puis cliquer sur le bouton **pair Tv**
 
    
 
-   ![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\githubDoc\docs\images\TvDomSamsung-image-12.png)
+   ![plugin-daemon-01](../images/TvDomSamsung-image-12.png)
 
    Les logs du daemon sont stockés dans le répertoire logs.
 
