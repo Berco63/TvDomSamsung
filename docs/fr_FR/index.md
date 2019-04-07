@@ -10,6 +10,52 @@ Le plugin TvDomSamsung sert à piloter une TV Samsung (*smart, connectée*) acce
 
 ## Le plugin
 
+Le plugin dans sa version 1.0.D nécessite d'être configuré. Pour cela activer le menu **Plugins -> Gestion des plugins**, puis cliquer sur l'icone du plugin TvDomSamsung.![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\plugin_info\TvDomSamsung_icon.png)
+
+
+
+L'écran de configuration du plugin se présente ainsi :
+
+
+
+![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\githubDoc\docs\images\TvDomSamsung-image-0.png)
+
+
+
+Le panneau de configuration comprend notamment :
+
+- la gestion des dépendances,
+- la gestion du daemon propre aux modèles Samsung J,
+- les paramètres essentiels du daemon.
+
+Je ne présenterai pas,ici les détails des deux premiers panneaux : dépendance et daemon.
+
+
+
+Les paramètres du daemon sont les suivants:
+
+- Temps de pause : délai nécessaire entre l'envoi d'une séquence de commandes au téléviseur. (Utilisé par la commande sendKey dans un scénario par exemple).
+
+- Daemon actif, à cocher uniquement pour les modèles Samsung J. Le daemon ne sera lancé que si ce choix est activé. Il est donc inutile pour les autres modèles de TV.
+- Port daemon : port de communication du daemon. Sélectionner un port disponible sur la machine où sera installé le daemon.
+- Http time out : time out pour les liaisons http. Peut être adapté en fonction de la latence de la Tv.
+- Connexion time out. (idem).
+- Niveau de log. En fonctionnement normal, afin de minimiser le volume des logs, positionner le niveau sur INFO.
+
+Une fois la saisie réalisée, sauvegardez les paramètres.
+
+
+
+Voici la présentation due la configuration du plugin pour les modèles de Smart TV autres que le modèle J.
+
+![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\githubDoc\docs\images\TvDomSamsung-image-0-1.png)
+
+
+
+La différence notable se situe au niveau de la du choix ; **Daemon actif** qui n'est pas coché.
+
+
+
 Après avoir installé le plugin, il vous faut créer une occurrence en cliquant dans le menu plugin sur le sous-menu multimédia, puis Tv DomSamsung.
 
 
@@ -124,12 +170,14 @@ Le panneau de configuration d'un modèle Tizen se présente ainsi :
 
   C'est le rappel du modèle de téléviseur. Non modifiable.
 
--  ***Série***
+- ***Série***
 
   Pour l'instant seules deux séries sont définies. La boîte de sélection permet de choisir:
 
       *    Standard, modèle général,
-      *    K,  modèles de la *série K* nécessitant un protocole de communication spécifique.
+      *    K, modèles de la *série K* nécessitant un protocole de communication spécifique.
+      *    J, modèles de la *série J* nécessitant un protocole de communication spécifique, avec appairage. Nécessite d'avoir rendu le daemon actif et de l'avoir démarré.
+           Voir la rubrique spécifique à l'appairage (voir télécommande).
 
 - ***Adresse IP TV***
 
@@ -207,7 +255,7 @@ Il comprend l'ensemble des touches les plus utilisées.
 
 > ***Tips***
 >
-> Notez dans le coin supérieur droit un bouton affiché en gris.(Ce bouton n'est présent que pour les Smart Tv Legacy).
+> Notez dans le coin supérieur droit un bouton affiché en gris.(Ce bouton est présent pour les Smart Tv Legacy, ou modèles J).
 >
 > Ce bouton sert à lancer une séquence d'autorisation de connexion au téléviseur depuis une télécommande. En principe cette action n'est à réaliser qu'une seule fois. Dès que vous appuyez sur ce bouton, un message de confirmation est affiché sur le téléviseur. Validez la réponse pour que la télécommande du plugin puisse se connecter.*Si ce message n'apparaît pas*, Activer le menu du téléviseur choisir réseau puis  Allshare puis partage. vérifier alors que cette connexion n'est pas marquée **refusée**, sinon la supprimer et recommencer l'étape d'autorisation.
 
@@ -362,6 +410,87 @@ Les commandes sont stockées sous forme de liste au format suivant :
 
 
 
+## Appairage des Smart TV modèles J
+
+Afin de pouvoir envoyer des commandes à la télévision depuis le plugin, il est nécessaire de réaliser un appairage.
+
+Grosso modo l'appairage consiste à :
+
+- demander l'affichage d'un code d'autorisation fourni par la TV (code Pin),
+
+- Transmettre à la TV le code pin fourni afin d'autoriser le dialogue Tv/Télécommande,
+
+- En retour, si le code pin est validé, un jeton crypté est retourné par la Tv. Ce jeton servira à encoder les échanges Tv/Plugin. 
+
+  Par la suite, si ce jeton n'est pas fourni ou s'il est incorrect., la connexion ne pourra se faire.
+
+  
+
+  **Tips**
+
+  L'opération d'appairage n'est à réaliser qu'une seule fois. Le jeton de cryptage est mémorisé par le plugin et réutilisé lors des connexions suivantes.
+
+  L'appairage peut échouer si le plugin n'est pas autorisé à dialoguer avec la TV. Pour cela, il faut vérifier au niveau des menus du Tv que le plugin n'a  pas été rejeté. Dans ce cas, supprimer, au niveau du menu de la Tv, le refus de connexion du plugin, puis relancer l'appairage.
+
+
+
+L'appairage est réalisé à l'aide de la télécommande du plugin, 
+
+![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\githubDoc\docs\images\appairage_modeles_J_1.png)
+
+Il suffit de cliquer sur le bouton gris dans le coin supérieur droit de la télécommande. 
+
+Un écran de confirmation est affiché 
+
+![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\githubDoc\docs\images\appairage_modeles_J_2.png)
+
+Appuyez sur le bouton OK pour afficher la page de code pin sur la TV.
+
+Si la communication est établie avec la Tv, l'écran de saisie du code Pin est alors affiché :
+
+![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\githubDoc\docs\images\appairage_modeles_J_3.png)
+
+
+
+Saisir le code pin, puis cliquer sur le bouton **pair Tv**
+
+
+
+
+
+## Daemon associé aux modèles J
+
+1. **Prè-requis**
+
+   Le daemon exécute dans un environnement Python 2.7.
+
+   Lors de l'installation du plugin, les modules complémentaires sont installés depuis le réseau, ils sont nécessaires au fonctionnement du plugin.
+
+   ​	websocket-client     : client web-socket,
+   ​	rijndael                    : module de cryptographie
+   ​	ipaddress   	     : module de vérification d'adresse IP
+   ​	pycrypto                  : module de cryptographie
+   ​	aenum                   : enumération python
+   ​	requests                   : modules http
+
+2. **Structure répertoire daemon**
+
+   Le daemon est stocké au sein du plugin dans le répertoire resources, il se présente ainsi :
+
+   
+
+   ![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\githubDoc\docs\images\TvDomSamsung-image-12.png)
+
+   Les logs du daemon sont stockés dans le répertoire logs.
+
+   Les paramètres spécifiques du daemon sont stockés dans le fichier smartJHDaemon.conf.
+
+   La procédure d'installation du daemon est enregistrée sous : install_apt.sh.
+
+   
+
+
+
 # FAQ
 
 ## Compatibilité avec mon téléviseur Samsung ?
@@ -377,9 +506,19 @@ Les modèles validés à l'heure actuelle sont des modèles : K et M.
 
 **Les modèles qui semblent poser problèmes** : 
 
-Les modèles **J & H** restent **incompatibles** avec le plugin TvDomSamsung.
+Les modèles **H** restent **incompatibles** avec le plugin TvDomSamsung.
 
 Vous trouverez, sur le forum, une page consacrée au plugin TvDomSamsung. Des utilitaires sont à disposition pour vérifier la compatibilité de votre TV avec le plugin.
+
+
+
+Cette version beta devrait permettre des connexions aux modèles J. 
+
+**Cependant, le plugin ne pourra servir en même temps qu'une seule TV de modèle J. En effet, le daemon modèle J ne peut être associé qu'à une seule TV.** 
+
+
+
+
 
 ## Problèmes rencontrés
 
