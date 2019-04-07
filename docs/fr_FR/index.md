@@ -22,6 +22,8 @@ L'écran de configuration du plugin se présente ainsi :
 
 
 
+
+
 Le panneau de configuration comprend notamment :
 
 - la gestion des dépendances,
