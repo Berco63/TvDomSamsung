@@ -11,13 +11,13 @@ Le plugin TvDomSamsung sert à piloter une TV Samsung (*smart, connectée*) acce
 
 ## Le plugin
 
-Le plugin dans sa version 1.0.D nécessite d'être configuré. Pour cela activer le menu **Plugins -> Gestion des plugins**, puis cliquer sur l'icone du plugin TvDomSamsung.![](../images/TvDomSamsung_icon.png)
+Le plugin dans sa version 1.0.D nécessite d'être configuré. Pour cela activer le menu **Plugins -> Gestion des plugins**, puis cliquer sur l'icone du plugin TvDomSamsung.![plugin-000](../images/TvDomSamsung_icon.png)
 
 L'écran de configuration du plugin se présente ainsi :
 
 
 
-![](../images/TvDomSamsung-image-0.png)
+![plugin-001](../images/TvDomSamsung-image-0.png)
 
 
 
@@ -49,7 +49,7 @@ Une fois la saisie réalisée, sauvegardez les paramètres.
 
 Voici la présentation de la configuration du plugin pour les modèles de Smart TV autres que le modèle J.
 
-![](../images/TvDomSamsung-image-0-1.png)
+![plugin-002](../images/TvDomSamsung-image-0-1.png)
 
 
 
