@@ -394,7 +394,7 @@ Un fichier macro est constitué d'un ensemble de commandes qui peut être envoy�
 
 Les commandes sont stockées sous forme de liste au format suivant :
 
-  KEY~PAUSE| ... |KEY~PAUSE EOL
+  KEY~PAUSE | ...  | KEY~PAUSE EOL
 
   où KEY    est égal au code de la touche à envoyer
 ?     ~      sert de séparateur
@@ -453,7 +453,7 @@ Si la communication est établie avec la Tv, l'écran de saisie du code Pin est 
 
 
 
-Saisir le code pin, puis cliquer sur le bouton **pair Tv**
+Saisir le code pin, puis cliquer sur le bouton **appairer Tv**
 
 
 
