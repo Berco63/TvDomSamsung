@@ -541,14 +541,31 @@ Les commandes suivantes sont utilisables dans un scénario :
 
 - ***zap***        : changer de chaîne. fournir le canal à sélectionner sur deux digits. 
 
-  ?		Exemple -> zap 24. Demande affichage canal 24.
+  ​		Exemple -> zap 24. Demande affichage canal 24.
 
 - ***sendkey***  : envoi d'une commande au TV. 
 
-  ?		Le format d'envoi est le suivant : KEY_xx | KEY_xx | KEY_xx ...
-  ?		Par exemple, pour allumer le TV et passer au canal 41, il suffit d'envoyer : 
+  Une commande peut être constituée d'une ou de plusieurs actions. 
 
-  ?               *sendkey KEY_POWERON | KEY_4 | KEY_1*
+  Si plusieurs actions sont à exécuter, elles sont séparées par &#124; ( un pipe).
+
+  - envoi d'une commande simple	:
+
+    - *sendkey* KEY_MUTE   ( bascule le Tv en mode muet)
+
+  - envoi d'un lot d'actions
+
+    - *sendkey* KEY_POWERON &#124; KEY_1   : allume la tv et affiche la chaîne n° 1
+
+    - Pour afficher une chaîne avec un n° > 9 la commande se présente ainsi:
+
+      *sendkey* KEY_1 &#124; KEY_8          : demande l'affichage de la chaîne 18                 
+
+
+
+  Par exemple, pour allumer le TV et passer au canal 41, il suffit d'envoyer : 
+
+  ​               *sendkey* KEY_POWERON &#124; KEY_4 &#124; KEY_1
 
 
 
@@ -558,6 +575,8 @@ Voici la liste des commandes qui peuvent être envoyées aux téléviseurs Samsu
 
 
 > La bonne exécution de la commande peut être dépendante du modèle de téléviseur.
+>
+>
 
     KEY_0
     KEY_1
@@ -811,11 +830,7 @@ Voici la liste des commandes qui peuvent être envoyées aux téléviseurs Samsu
     KEY_ZOOM_MOVE
     KEY_ZOOM_OUT
 
->
->
->Par exemple pour afficher le canal 18 sur votre TV il faut envoyer : KEY_1 puis KEY_8.
->
->
+
 
 
 
