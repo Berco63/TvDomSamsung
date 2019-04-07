@@ -1,5 +1,10 @@
 **Change Log**
 
+# 1.0.D Version Beta 04/04/2019
+
+- Prise en compte des Smart Tv Samsung modèles J
+- Paramétrage du temps de pause nécessaire lors de l'envoi d'une séquence de touches.(Utilisé dans les scénarios, par exemple).
+
 # 1.0.C Version 18/12/2018
 
 - Prise en compte du firmware d'Octobre 2018 pour les modèles de Tv Tizen.
