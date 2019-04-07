@@ -10,9 +10,7 @@ Le plugin TvDomSamsung sert à piloter une TV Samsung (*smart, connectée*) acce
 
 ## Le plugin
 
-Le plugin dans sa version 1.0.D nécessite d'être configuré. Pour cela activer le menu **Plugins -> Gestion des plugins**, puis cliquer sur l'icone du plugin TvDomSamsung.![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\plugin_info\TvDomSamsung_icon.png)
-
-
+Le plugin dans sa version 1.0.D nécessite d'être configuré. Pour cela activer le menu **Plugins -> Gestion des plugins**, puis cliquer sur l'icone du plugin TvDomSamsung.![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\githubDoc\docs\images\TvDomSamsung_icon.png)
 
 L'écran de configuration du plugin se présente ainsi :
 
