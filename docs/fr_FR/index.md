@@ -10,13 +10,13 @@ Le plugin TvDomSamsung sert à piloter une TV Samsung (*smart, connectée*) acce
 
 ## Le plugin
 
-Le plugin dans sa version 1.0.D nécessite d'être configuré. Pour cela activer le menu **Plugins -> Gestion des plugins**, puis cliquer sur l'icone du plugin TvDomSamsung.![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\githubDoc\docs\images\TvDomSamsung_icon.png)
+Le plugin dans sa version 1.0.D nécessite d'être configuré. Pour cela activer le menu **Plugins -> Gestion des plugins**, puis cliquer sur l'icone du plugin TvDomSamsung.![](../images/TvDomSamsung_icon.png)
 
 L'écran de configuration du plugin se présente ainsi :
 
 
 
-![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\githubDoc\docs\images\TvDomSamsung-image-0.png)
+![](../images/TvDomSamsung-image-0.png)
 
 
 
@@ -48,7 +48,7 @@ Une fois la saisie réalisée, sauvegardez les paramètres.
 
 Voici la présentation de la configuration du plugin pour les modèles de Smart TV autres que le modèle J.
 
-![](H:\Projects\eclipse\eclipse-php\workspace_jeedom_php\TvDomSamsung-V3.1-v1.0.a\githubDoc\docs\images\TvDomSamsung-image-0-1.png)
+![](../images/TvDomSamsung-image-0-1.png)
 
 
 
@@ -466,12 +466,12 @@ Saisir le code pin, puis cliquer sur le bouton **pair Tv**
 
    Lors de l'installation du plugin, les modules complémentaires sont installés depuis le réseau, ils sont nécessaires au fonctionnement du plugin.
 
-   ​	websocket-client     : client web-socket,
-   ​	rijndael                    : module de cryptographie
-   ​	ipaddress   	     : module de vérification d'adresse IP
-   ​	pycrypto                  : module de cryptographie
-   ​	aenum                   : enumération python
-   ​	requests                   : modules http
+   ?	websocket-client     : client web-socket,
+   ?	rijndael                    : module de cryptographie
+   ?	ipaddress   	     : module de vérification d'adresse IP
+   ?	pycrypto                  : module de cryptographie
+   ?	aenum                   : enumération python
+   ?	requests                   : modules http
 
 2. **Structure répertoire daemon**
 
@@ -543,7 +543,7 @@ Les commandes suivantes sont utilisables dans un scénario :
 
 - ***zap***        : changer de chaîne. fournir le canal à sélectionner sur deux digits. 
 
-  ​		Exemple -> zap 24. Demande affichage canal 24.
+  ?		Exemple -> zap 24. Demande affichage canal 24.
 
 - ***sendkey***  : envoi d'une commande au TV. 
 
@@ -567,7 +567,7 @@ Les commandes suivantes sont utilisables dans un scénario :
 
   Par exemple, pour allumer le TV et passer au canal 41, il suffit d'envoyer : 
 
-  ​               *sendkey* KEY_POWERON &#124; KEY_4 &#124; KEY_1
+  ?               *sendkey* KEY_POWERON &#124; KEY_4 &#124; KEY_1
 
 
 
