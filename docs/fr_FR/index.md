@@ -239,11 +239,33 @@ Après affichage du Dashboard Jeedom, vous devriez trouver un nouveau widget cor
 
 La télécommande se présente sous forme d'une fenêtre présentant  plusieurs onglets :
 
-- Principal,
+- Tnt
+
+- Principal, (Pavé)
 - Commandes
 - Macros
 
 Ces onglets sont présentés de façon détaillée, ci-dessous.
+
+
+
+## L'onglet TNT
+
+
+
+Cet onglet présente l'ensemble des chaînes  de la TNT suivant un mode graphique. Pour activer une chaîne, cliquer sur l'image de la chaîne.
+
+Pour faire défiler les pages, il suffit de cliquer sur le bord droit de la fenêtre pou accéder à la page suivate, ou bien de cliquer sur le bord gauche pour
+
+afficher la page précédente.
+
+L'écran se présente ainsi:
+
+![Tnt](..\images\TvDomSamsung-image-7-0.png)
+
+Noter les bords de la fenêtre en léger dégradé figurant ainsi les zones de défilement : page précédente/suivante.
+
+
 
 
 
