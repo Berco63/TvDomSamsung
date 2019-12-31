@@ -1,5 +1,10 @@
 # **Change Log**
 
+# 1.0.G Version Beta 31/12/2019
+
+- Mise à niveau widget en conformité avec jeedom V4
+- Correction bug lié suppression de l'entité objet replacée par jeeObject
+
 # 1.0.D Version Beta 04/04/2019
 
 - Prise en compte des Smart Tv Samsung modèles J
