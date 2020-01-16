@@ -1,4 +1,4 @@
-**TvDomSamsung**
+**Compatibilté du plugin**
 
 Plugin pour télécommander les Smart Tv Samsung.
 
