@@ -1013,4 +1013,4 @@ Here is the list of Smart Tvs supported by the plugin:
 
 # Detailed changelog 
 
->>>>>>> <https://bercolly.github.io/TvDomSamsung/en_US/changelog>
+>>>>>>> <https://berco63.github.io/TvDomSamsung/en_US/changelog>
