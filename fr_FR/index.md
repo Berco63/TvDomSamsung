@@ -134,6 +134,18 @@ Pour l'instant seules deux séries sont définies. La boîte de sélection perme
 
   Permet de personnaliser al couleur des labels en conjonction avec le fond d'écran.
 
+- ***Temps de latence***
+
+  Il est possible d'envoyer une séquence de touches vers la Tv à partir d'un scénario (voir commande SendKey). 
+  Pour respecter un délai entre l'envoi de chaque touche, un temps de latence est nécessaire. Positionner dans ce paramètre le temps pour les touches non numériques de la télécommande, par exemple : SOURCE, GUIDE, ENTER, etc.
+
+- ***Temps de latence (NUM)***
+
+  Il est possible d'envoyer une séquence de touches vers la Tv à partir d'un scénario (voir commande SendKey). 
+  Pour respecter un délai entre l'envoi de chaque touche, un temps de latence est nécessaire. 
+
+  Positionner dans ce paramètre le temps pour les touches  numériques de la télécommande.
+
 - ***Commandes/Actions***
 
   Six commandes sont définies, elles permettent de piloter la SMART TV dans des scénarios.
@@ -206,6 +218,18 @@ Le panneau de configuration d'un modèle Tizen se présente ainsi :
 - ***Couleur label***
 
   Permet de personnaliser al couleur des labels en conjonction avec le fond d'écran.
+
+- ***Temps de latence***
+
+  Il est possible d'envoyer une séquence de touches vers la Tv à partir d'un scénario (voir commande SendKey). 
+  Pour respecter un délai entre l'envoi de chaque touche, un temps de latence est nécessaire. Positionner dans ce paramètre le temps pour les touches non numériques de la télécommande, par exemple : SOURCE, GUIDE, ENTER, etc.
+
+- ***Temps de latence (NUM)***
+
+  Il est possible d'envoyer une séquence de touches vers la Tv à partir d'un scénario (voir commande SendKey). 
+  Pour respecter un délai entre l'envoi de chaque touche, un temps de latence est nécessaire. 
+
+  Positionner dans ce paramètre le temps pour les touches  numériques de la télécommande.
 
 - ***Commandes/Actions***
 
@@ -550,6 +574,8 @@ Samsung a délivré une mise à jour du firmware de ses SmartTv modèle Tizen en
 
 Ceci a eu pour conséquence de rendre **incompatible la communication entre le plugin et la TV**.
 Ce problème est en cours d'étude.  Il n'est pas recommandé d'acquérir le plugin si vous avez installé le dernier firmware sur votre modèle Tizen.
+
+**Ce problème est résolu depuis la version V1.0.C de décembre 2018.**
 
 
 

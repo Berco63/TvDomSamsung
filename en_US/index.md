@@ -113,6 +113,14 @@ For the moment only two series are defined. The selection box allows you to choo
 
 - ***Label color***   Allows you to customize the color of the labels in conjunction with the wallpaper.
 
+- **Latency**
+
+  It is possible to send a key sequence to the TV from a scenario (see SendKey command).To respect a delay between the sending of each key, a latency time is necessary. Set the time in this parameter for the non-numeric keys on the remote control, for example: SOURCE, GUIDE, ENTER, etc.
+
+- **Latency (NUM)**
+
+  It is possible to send a key sequence to the TV from a scenario (see SendKey command).To respect a delay between the sending of each key, a latency time is necessary.In this parameter, set the time for the numeric keys of the remote control.
+
 - ***Controls / Actions*** Six commands are defined, they allow you to control the SMART TV in scenarios.
 
   `Activate`: only used to associate the widget on the dashboard Turn off: TV off command`

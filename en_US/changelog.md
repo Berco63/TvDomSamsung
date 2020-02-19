@@ -1,5 +1,9 @@
 # **Change Log**
 
+# 1.0.I Version Beta
+
+- Addition of a latency parameter for sending key sequence from a scenario.
+
 # 1.0.H Version Beta 
 
 - Typo corrections for  I18n files
