@@ -1,5 +1,9 @@
 # **Change Log**
 
+# 1.0.H Version Beta 
+
+- Typo corrections for  I18n files
+
 # 1.0.G 
 
 - Widget upgrade in accordance with jeedom V4
