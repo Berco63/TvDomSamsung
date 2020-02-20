@@ -1,5 +1,13 @@
 # **Change Log**
 
+# 1.0.I Version Beta
+
+- Ajout d'un paramètre de latence pour envoi séquence de touche depuis un scénario.
+
+# 1.0.H Version Beta 
+
+- Correction typo pour fichiers I18n
+
 # 1.0.G Version Beta 31/12/2019
 
 - Mise à niveau widget en conformité avec jeedom V4
