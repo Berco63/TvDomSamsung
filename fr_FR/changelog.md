@@ -22,9 +22,6 @@
 
 - Correction de l'affichage du widget : dashboard et design.
 
-# 1.0.J Version du 13/03/2020**
-
-- Correction de l'affichage du widget : dashboard et design.
 - Permettre de redimensionner et de placer le widget sur un design.
 
 
