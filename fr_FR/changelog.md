@@ -1,5 +1,33 @@
 # **Change Log**
 
+# 1.0.L Version du 08/11/2020
+
+- Refactorisatiuon du code,
+- Ajout d'une commande **Off** qui permet d'éteindre la Smart Tv depuis un scénario.
+- Correction bug sur gestion du WOL ( wake on lan).
+
+# 1.0.L Version du 27/04/2020
+
+- Refactorisation du code 
+- Ajout d'une commande 'Off' afin d'éteindre la télévision depuis un scénario,
+- Correction bug sur le traitement du Wake on lan (WOL), 
+- Pour le paramètre WOL, fonctionnement soit en mode direct sur l'IP de la télévision soit en mode broadcast , dans ce cas renseigner le masque de sous-réseau.
+  
+
+# 1.0.K Version du 27/04/2020
+
+- Amélioration de l'affichage de la télécommande suivant le média utilisé: PC, tablette ou téléphone mobile.
+
+# 1.0.J Version du 13/03/2020
+
+- Correction de l'affichage du widget : dashboard et design.
+
+# 1.0.J Version du 13/03/2020**
+
+- Correction de l'affichage du widget : dashboard et design.
+- Permettre de redimensionner et de placer le widget sur un design.
+
+
 # 1.0.I Version Beta
 
 - Ajout d'un paramètre de latence pour envoi séquence de touche depuis un scénario.
