@@ -131,4 +131,5 @@ Pour cela un paramètre de configuration a été ajouté dans le module de descr
    - Fourniture du plugin, du widget et de la documentation.
    - Tests réalisés sous jeedom 1.212 et mini+ 
    - Tests réalisés sous jeedom 1.212 et VirtualBox
-   -  Tests réalisés sous jeedom V2    et VirtualBox
+   - Tests réalisés sous jeedom V2    et VirtualBox
+   
