@@ -2,14 +2,8 @@
 
 # 1.0.L Version du 08/11/2020
 
-- Refactorisatiuon du code,
-- Ajout d'une commande **Off** qui permet d'éteindre la Smart Tv depuis un scénario.
-- Correction bug sur gestion du WOL ( wake on lan).
-
-# 1.0.L Version du 27/04/2020
-
 - Refactorisation du code 
-- Ajout d'une commande 'Off' afin d'éteindre la télévision depuis un scénario,
+- Ajout d'une commande '**Off**' afin d'éteindre la télévision depuis un scénario,
 - Correction bug sur le traitement du Wake on lan (WOL), 
 - Pour le paramètre WOL, fonctionnement soit en mode direct sur l'IP de la télévision soit en mode broadcast , dans ce cas renseigner le masque de sous-réseau.
   
