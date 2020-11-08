@@ -1,6 +1,6 @@
 # **Change Log**
 
-# **1.0.L Version du 08/11/2020**
+# 1.0.L Version du 08/11/2020
 
 - Refactorisation du code 
 - Ajout d'une commande '**Off**' afin d'éteindre la télévision depuis un scénario,
@@ -8,28 +8,26 @@
 - Pour le paramètre WOL, fonctionnement soit en mode direct sur l'IP de la télévision soit en mode broadcast , dans ce cas renseigner le masque de sous-réseau.
   
 
-# **1.0.K Version du 27/04/2020**
+# 1.0.K Version du 27/04/2020
 
 - Amélioration de l'affichage de la télécommande suivant le média utilisé: PC, tablette ou téléphone mobile.
 
-# **1.0.J Version du 13/03/2020**
+# 1.0.J Version du 13/03/2020
 
 - Correction de l'affichage du widget : dashboard et design.
 
 - Permettre de redimensionner et de placer le widget sur un design.
 
 
-# **1.0.I Version Beta**
+# 1.0.I Version Beta
 
 - Ajout d'un paramètre de latence pour envoi séquence de touche depuis un scénario.
 
-
-
-# **1.0.H Version Beta**
+# 1.0.H Version Beta
 
 - Correction typo pour fichiers I18n
 
-# **1.0.G Version Beta 31/12/2019**
+# 1.0.G Version Beta 31/12/2019
 
 - Mise à niveau widget en conformité avec jeedom V4
 - Correction bug lié suppression de l'entité objet replacée par jeeObject
@@ -51,8 +49,6 @@
 # 1.0.B Version 01/12/2018
 
 - Version intermédiaire, non diffusée.
-
-# 
 
 # 1.0.A Version 25/11/2018
 
