@@ -1,8 +1,6 @@
 **Compatibilté du plugin**
 
-Plugin pour télécommander les **Smart Tv Samsung**.
-
-
+Plugin pour télécommander les Smart Tv Samsung.
 
 <table>
 <thead>
@@ -155,5 +153,5 @@ Plugin pour télécommander les **Smart Tv Samsung**.
 
 
 * Depuis Octobre 2018, modèles Tizen avec connexion sur port 8002 en SSL.
-* Certains modèles ne sont pas supportés , voir liste ci-dessus.
+* Certains modèles ne sont pas supportés, voir liste ci-dessus. 
 * Support WOL ( wake on lan, allumage TV depuis le réseau)

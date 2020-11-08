@@ -157,21 +157,23 @@ Pour l'instant seules deux séries sont définies. La boîte de sélection perme
 
 - ***Commandes/Actions***
 
-  Six commandes sont définies, elles permettent de piloter la SMART TV dans des scénarios.
+    Sept commandes sont définies, elles permettent de piloter la SMART TV dans des scénarios.
 
   `Activer` : sert uniquement à associer le widget sur le dashboard
 
-   Eteindre : commande d'extinction du téléviseur
+  `Auth` : Cette commande permet d'initier la séquence d'autorisation de la télécommande par le téléviseur. Elle est en principe réservée et activée depuis la télécommande du plugin. Ne concerne que les modèles de téléviseur du type LEGACY.
 
   `Mute` : permet de passer la Smart TV en mode silencieux (volume du son à 0). Un deuxième envoi repositionne le son au volume sonore précédent.
 
-  `Zap` : Cette action provoque un changement de chaîne. Pour cela, il suffit d'indiquer en paramètre le n° de la chaîne à sélectionner. Ce n° de chaîne doit être compris entre 1 et 99. La commande n'a aucun effet si aucun canal ne correspond au n° de chaîne entré.
+  `Off` : Cette commande permet d'éteindre le téléviseur depuis un scénario.
+
+  `OnOff` : commande d'allumage ou d'extinction du téléviseur suivant le cas.
 
   `SendKey` : Cette commande est utilisée dans les scénarios. voir annexe_scenario, pour plus de précision sur l'utilisation de cette commande.
 
-  `Auth` : Cette commande permet d'initier la séquence d'autorisation de la télécommande par le téléviseur. Elle est en principe réservée et activée depuis la télécommande du plugin. Ne concerne que les modèles de téléviseur du type LEGACY.
+  `Zap` : Cette action provoque un changement de chaîne. Pour cela, il suffit d'indiquer en paramètre le n° de la chaîne à sélectionner. Ce n° de chaîne doit être compris entre  1 et 99. La commande n'a aucun effet si aucun canal ne correspond au n° de chaîne entré.
 
-  > Pour que le plugin fonctionne correctement, toutes les zones doivent être renseignées .
+> Pour que le plugin fonctionne correctement, toutes les zones doivent être renseignées .
 
 Puis, enregistrez la configuration complète de l'équipement.
 
