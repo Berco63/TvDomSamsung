@@ -55,17 +55,13 @@ Les paramètres du daemon sont les suivants:
 
 Une fois la saisie réalisée, sauvegardez les paramètres.
 
-
-
 Voici la présentation de la configuration du plugin pour les modèles de Smart TV autres que le modèle J.
 
 ![plugin-002](../images/TvDomSamsung-image-15.png)
 
 
 
-La différence notable se situe au niveau du choix ; **Daemon actif** qui n'est pas coché.
-
-
+La différence notable se situe au niveau du choix : **Daemon actif** qui n'est pas coché.
 
 Après avoir installé le plugin, il vous faut créer une occurrence en cliquant dans le menu plugin sur le sous-menu multimédia, puis TvDomSamsung.
 
@@ -220,7 +216,7 @@ Le panneau de configuration d'un modèle Tizen se présente ainsi :
 
 - **WOL**
 
-  Indicateur servant à allumer la télévision depuis la réseau. Attention, cette option n'est pas disponible sur tous les modèles Tizen. Cocher l'option **Direct** si le signal est adressé sur l'adresse IP du téléviseur, ou **Broadcast** si l'envoi est fait sur tout le réseau. Dans ce cas, saisir le masque de sous réseau assoxié.
+  Indicateur servant à allumer la télévision depuis la réseau. Attention, cette option n'est pas disponible sur tous les modèles Tizen. Cocher l'option **Direct** si le signal est adressé sur l'adresse IP du téléviseur, ou **Broadcast** si l'envoi est fait sur tout le réseau. Dans ce cas, saisir le masque de sous réseau associé.
 
 - ***Application TV***
 
@@ -284,7 +280,6 @@ La télécommande se présente sous forme d'une fenêtre présentant  plusieurs 
 
 - Principal, (Pavé)
 - Commandes
-- Macros
 
 Ces onglets sont présentés de façon détaillée, ci-dessous.
 
@@ -296,7 +291,7 @@ Ces onglets sont présentés de façon détaillée, ci-dessous.
 
 Cet onglet présente l'ensemble des chaînes  de la TNT suivant un mode graphique. Pour activer une chaîne, cliquer sur l'image de la chaîne.
 
-Pour faire défiler les pages, il suffit de cliquer sur le bord droit de la fenêtre pou accéder à la page suivate, ou bien de cliquer sur le bord gauche pour
+Pour faire défiler les pages, il suffit de cliquer sur le bord droit de la fenêtre pou accéder à la page suivante, ou bien de cliquer sur le bord gauche pour
 
 afficher la page précédente.
 
@@ -391,87 +386,6 @@ Il comprend la plupart des touches que l'on peut trouver sur la télécommande S
 
 
 ![../images/TvDomSamsung-image-9.png](../images/TvDomSamsung-image-9.png)
-
-
-
-## L'onglet macros
-
-
-Cet onglet présente l'ensemble des macros que vous avez enregistrées, sous forme d'un tableau.
-
-![../images/TvDomSamsung-image-10.png](../images/TvDomSamsung-image-10.png)
-
-
-
-Pour chaque ligne du tableau, vous avez les informations suivantes :
-
-* le nom de la macro,
-
-* un bouton servant au lancement de cette macro,
-
-* un bouton de suppression
-
-* un bouton de visualisation.
-
-
-> **Tips**
->
-> Une macro est une série de commandes préenregistrées qui sera envoyée au téléviseur en une seule interaction utilisateur.
->
->
-
-
-
-***Enregistrement d'une macro***
-
-
-L'enregistrement d'une macro est réalisé en ouvrant au préalable le __panneau curseurs__.
-
-
-![../images/TvDomSamsung-image-11.png](../images/TvDomSamsung-image-11.png)
-
-
-l'onglet présente trois boutons de commande :
-
-* Démarrer    : lancement de l'enregistrement d'une macro.
-* Arrêter     : arrêt de l'enregistrement
-* Sauvegarder : enregistrer la macro sur le disque dur.
-
-**<u>Quelques règles de fonctionnement</u>**
-
-*Démarrer* l'enregistrement d'une macro, puis *naviguer* sur le panneau principal et/ou de commandes et *appuyer* sur les touches qui vous conviennent.
-Puis une fois l'acquisition terminée, *revenir* sur le tableau d'enregistrement de la macro et appuyer sur le bouton _arrêter_, puis *saisir* un nom pour votre macro et *appuyer* ensuite sur le bouton _sauvegarder_.
-
-
-
-> Le bouton de démarrage de la macro est en rouge, lorqu'il est possible de démarrer une macro. Si, une macro est déjà en cours d'enregistrement, le bouton de démarrage est grisé.
->
-> Les boutons *arrêter* et *sauvegarder* sont grisés si aucune macro n'est en cours d'enregistrement.
->
-> Le bouton *sauvegarder* reste grisé si le contenu de la macro en cours ne contient aucune commande. Ce bouton reste inactif, si aucun nom de macro n'est renseigné.
-
-
-
-**<u>Format des macros commandes</u>**
-
-Un fichier macro est constitué d'un ensemble de commandes qui peut être envoyé en une seule fois au périphérique.
-
-Les commandes sont stockées sous forme de liste au format suivant :
-
-  KEY~PAUSE | ...  | KEY~PAUSE EOL
-
-  où KEY    est égal au code de la touche à envoyer
-?     ~      sert de séparateur
-?     PAUSE  indique le temps d'attente en millisecondes avant envoi de la commande
-?     |      définit le délimiteur de commandes
-?     ...    la suite des commandes
-?     |
-?     KEY~PAUSE EOL dernière commande suivie d'un retour-chariot.
-?     
-
-> Lors des tests, il a été possible de définir le temps de pause minimum à 1200 millisecondes. Cependant, certaines actions peuvent nécessiter un temps d'attente plus important (par ex : touche SMART HUB).
-
-> Si le temps de pause est trop court, il est possible que le téléviseur n'effectue pas les opérations attendues du fait de  leur désynchronisation.
 
 
 
@@ -602,7 +516,7 @@ Ce problème est en cours d'étude.  Il n'est pas recommandé d'acquérir le plu
 
 Les commandes suivantes sont utilisables dans un scénario :
 
-- ***eteindre*** : éteindre le téléviseur
+- **off**: éteindre le téléviseur
 
 - ***mute***     : mode silencieux (en bascule)
 
@@ -1059,7 +973,7 @@ Voici la liste des Smart Tv supportées par le plugin :
 
 
 * Depuis Octobre 2018, modèles Tizen avec connexion sur port 8002 en SSL.
-* Certains modèles ne sont pas supportés 
+* Certains modèles ne sont pas supportés, voir liste ci-dessus
 * Support WOL ( wake on lan, allumage TV depuis le réseau)
 
 
