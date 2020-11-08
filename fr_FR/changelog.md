@@ -19,15 +19,15 @@
 - Permettre de redimensionner et de placer le widget sur un design.
 
 
-# 1.0.I Version Beta
+# **1.0.I Version Beta**
 
 - Ajout d'un paramètre de latence pour envoi séquence de touche depuis un scénario.
 
-# 1.0.H Version Beta 
+# **1.0.H Version Beta**
 
 - Correction typo pour fichiers I18n
 
-# 1.0.G Version Beta 31/12/2019
+# **1.0.G Version Beta 31/12/2019**
 
 - Mise à niveau widget en conformité avec jeedom V4
 - Correction bug lié suppression de l'entité objet replacée par jeeObject
