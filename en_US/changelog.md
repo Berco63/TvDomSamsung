@@ -2,12 +2,6 @@
 
 # 1.0.L Version du 08/11/2020
 
-- Refactorisatiuon du code,
-- Ajout d'une commande **Off** qui permet d'éteindre la Smart Tv depuis un scénario.
-- Correction bug sur gestion du WOL ( wake on lan).
-
-# 1.0.L Version du 27/04/2020
-
 - Code refactoring
 - Addition of an 'Off' command to turn off the television from a scenario,
 - Bug fix on Wake on lan (WOL) processing,
