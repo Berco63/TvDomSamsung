@@ -18,12 +18,13 @@ The plugin configuration screen looks like this:
 
 
 
-![plugin-001](../images/TvDomSamsung-image-0.png)
+![plugin-001](../images/TvDomSamsung-image-14.png)
 
 The configuration panel notably includes:
 
 	- dependency management,
 	- daemon management specific to Samsung J models,
+	- specific parameters to the configuration of the remote       control,
 	- the essential parameters of the daemon.
 
 I will not present here the details of the first two panels: dependency and daemon.
@@ -43,11 +44,31 @@ Once the entry has been made, save the parameters.
 
 Here is the presentation of the configuration of the plugin for Smart TV models other than the J model.
 
-![plugin-002](../images/TvDomSamsung-image-0-1.png)
+![plugin-002](../images/TvDomSamsung-image-13.png)
 
 
 
-The notable difference lies in the choice **Active Daemon** which is not checked.
+- The daemon parameters are as follows:
+
+  - Pause time: time required between sending a sequence of commands to the television. (Used by the sendKey command in a scenario for example).
+
+  - Daemon active, to be checked only for Samsung J models. The daemon will only be launched if this choice is activated. It is therefore unnecessary for other TV models.
+  - Daemon port: communication port of the daemon. Select an available port on the machine where the daemon will be installed.
+  - Http time out: time out for http connections. Can be adapted according to the latency of the TV.
+  - Connection time out. (Same).
+  - Log level. In normal operation, in order to minimize the volume of logs, set the level to INFO.
+
+  Once the entry is made, save the parameters.
+
+  Here is the presentation of the plugin configuration for Smart TV models other than the J model.
+
+  ![plugin-002](../images/TvDomSamsung-image-15.png)
+
+  
+
+  
+
+  The notable difference lies in the choice **Active Daemon** which is not checked.
 
 After installing the plugin, you need to create an instance by clicking in the plugin menu on the multimedia submenu, then TvDomSamsung.
 
@@ -121,19 +142,25 @@ For the moment only two series are defined. The selection box allows you to choo
 
   It is possible to send a key sequence to the TV from a scenario (see SendKey command).To respect a delay between the sending of each key, a latency time is necessary.In this parameter, set the time for the numeric keys of the remote control.
 
-- ***Controls / Actions*** Six commands are defined, they allow you to control the SMART TV in scenarios.
+- ***Controls / Actions*** 
 
-  `Activate`: only used to associate the widget on the dashboard Turn off: TV off command`
+  Seven commands are defined, they allow you to control the SMART TV in scenarios.
 
-  `Mute`: switches the Smart TV to silent mode (sound volume at 0). A second send reposition the sound to the previous volume.
+  ​	`Activate ` : is only used to associate the widget on the dashboard
 
-  `Zap`: This action causes a channel change. For that, it is enough to indicate in parameter the n ° of the channel to select. This channel number must be between 1 and 99. The command has no effect if no channel corresponds to the entered channel number.
+  ​	`Auth`: This command initiates the remote control authorization sequence by the TV. It is in 	principle reserved and activated from the plugin's remote control. Only applicable to 		  	LEGACY type TV models.
 
-  `SendKey`: This command is used in scenarios. see appendix_scenario, for more details on the use of this command.
+  ​	`Mute`: switch the Smart TV to silent mode (sound volume at 0). A second sending              	reposition the sound to the previous sound volume.
 
-  `Auth`: This command is used to initiate the remote control authorization sequence for the television. It is in principle reserved and activated from the plugin remote control. Only applies to LEGACY type TV models.
+  ​	`Off`: This command turns off the television from a scenario.
 
-  > For the plugin to work correctly, all fields must be filled in.
+  ​	`OnOff`: command to switch the television on or off as appropriate.
+  
+  ​	`SendKey`: This command is used in scenarios. see appendix_scenario, for more details on 	the use of this command.
+  
+  ​	`Zap`: This action causes a channel change. To do this, simply indicate the number of the    	channel to be selected as a parameter. This channel number must be between 1 and 99. 	The command has no effect if no channel matches the entered channel number. 
+  
+  For the 	plugin to work correctly, all fields must be filled in.
 
 Then save the complete configuration of the equipment.
 
@@ -184,6 +211,14 @@ The configuration panel of a Tizen model looks like this :
 
   > To be used in conjunction with port 8002.
 
+- **WOL**
+
+  Indicator used to switch on the television from the network. 
+
+  (Please note, this option is not available on all Tizen models.)
+
+  Check the option **Direct** if the signal is sent to the TV's IP address, or **Broadcast**  if the sending is done over the entire network. In this case, enter the associated subnet mask.
+
 - ***Application TV***
 
   It is free application code. Here, I have entered *jeedom.tizen.app.samsung*.
@@ -194,24 +229,30 @@ The configuration panel of a Tizen model looks like this :
 
   - ***Label color***   Allows you to customize the color of the labels in conjunction with the wallpaper.
 
-  - ***Controls / Actions*** Six commands are defined, they allow you to control the SMART TV in scenarios.
+  - ***Controls / Actions***
 
-    `Activate`: only used to associate the widget on the dashboard Turn off: TV off command`
+    Seven commands are defined, they allow you to control the SMART TV in scenarios.
 
-    `Mute`: switches the Smart TV to silent mode (sound volume at 0). A second send reposition the sound to the previous volume.
+    ​	`Activate ` : is only used to associate the widget on the dashboard
 
-    `Zap`: This action causes a channel change. For that, it is enough to indicate in parameter the n ° of the channel to select. This channel number must be between 1 and 99. The command has no effect if no channel corresponds to the entered channel number.
+    ​	`Auth`: This command initiates the remote control authorization sequence by the TV. It 	is in principle reserved and activated from the plugin's remote control. Only applicable 	to LEGACY type TV models.
 
-    `SendKey`: This command is used in scenarios. see appendix_scenario, for more details on the use of this command.
+    ​	`Mute`: switch the Smart TV to silent mode (sound volume at 0). A second sending              	reposition the sound to the previous sound volume.
 
-    `Auth`: This command is used to initiate the remote control authorization sequence for the television. It is in principle reserved and activated from the plugin remote control. Only applies to LEGACY type TV models.
+    ​	`Off`: This command turns off the television from a scenario.
 
+    ​	`OnOff`: command to switch the television on or off as appropriate.
+  
+    ​	`SendKey`: This command is used in scenarios. see appendix_scenario, for more details 	on the use of this command.
+  
+    ​	`Zap`: This action causes a channel change. To do this, simply indicate the number of 	the channel to be selected as a parameter. This channel number must be between 1 	and 99. The command has no effect if no channel matches the entered channel 		 	number. 
+  
     > For the plugin to work correctly, all fields must be filled in.
-
+  
   Then save the complete configuration of the equipment.
-
+  
   After viewing the Jeedom Dashboard, you should find a new widget that matches the newly configured Samsung TV.
-
+  
   
 
 ![plugin-6](../images/TvDomSamsung-image-6.png)
@@ -225,7 +266,6 @@ The remote control is presented in the form of a window with several tabs:
 - TNT
 - Main, (Paved)
 - Cmds (commandes)
-- Macros
 
 These tabs are discussed in detail below.
 
@@ -332,94 +372,6 @@ Il comprend la plupart des touches que l'on peut trouver sur la télécommande S
 
 
 ![../images/TvDomSamsung-image-9.png](../images/TvDomSamsung-image-9.png)
-
-
-
-## Macros tab
-
-This tab presents all the recorded macros under  a table form.
-
-
-
-![../images/TvDomSamsung-image-10.png](../images/TvDomSamsung-image-10.png)
-
-
-
-For each row of the table, you have the following information:
-
-* the name of the macro,
-* a button used to launch this macro,
-*  a delete button
-* a visualization button.
-
-
-> **Tips**
->
-> A macro is a series of pre-recorded commands that will be sent to the TV in a single user interaction.
->
->
-
-
-
-***Macro recording***
-
-
-Macro recording is done by first opening the __cursors panel__.
-
-
-![../images/TvDomSamsung-image-11.png](../images/TvDomSamsung-image-11.png)
-
-The tab presents three command buttons:
-
-- Start: start recording a macro.
-
--  Stop: stop recording
-
-- Save: save the macro on the hard disk.
-
-  
-
-  **Some operating rules** 
-
-  *Start* recording a macro, then *navigate* on the main and / or control panel and *press* on the keys that suit you.
-
-  Then once the acquisition is finished, *return* to the macro recording table and press the **_stop_** button, then *enter* a name for your macro and then *press* the **_save_** button.
-
-
-
-> Le bouton de démarrage de la macro est en rouge, lorqu'il est possible de démarrer une macro. Si, une macro est déjà en cours d'enregistrement, le bouton de démarrage est grisé.
->
-> Les boutons *arrêter* et *sauvegarder* sont grisés si aucune macro n'est en cours d'enregistrement.
->
-> Le bouton *sauvegarder* reste grisé si le contenu de la macro en cours ne contient aucune commande. Ce bouton reste inactif, si aucun nom de macro n'est renseigné.
-
-> The *start* button is red, when it is possible to start a macro. If a macro is already being recorded, the *start* button is grayed out.
->
-> The *stop* and *save* buttons are grayed out if no macro is being recorded.
->
-> The *save* button remains grayed out if the content of the current macro does not contain any command. This button remains inactive, if no macro name is entered.
-
-**<u>Format des macros commandes</u>**
-
-A macro file consists of a set of commands that can be sent at once to the device.
-
-Commands are stored as a list in the following format :
-
-  KEY~PAUSE | ...  | KEY~PAUSE EOL
-
-where KEY equals the key code to send
-
-?     ~      		serves as a separator
-?     PAUSE	indicates the delay in milliseconds before sending the command
-?     |      	   defines the command delimiter
-?     ...          series of commands
-?     |
-?     KEY~PAUSE EOL last command followed by a carriage return.
-?     
-
-> During the tests, it was possible to set the minimum pause time to 1200 milliseconds. However, certain actions may require a longer waiting time (for example: SMART HUB key).
->
-> If the pause time is too short, the TV may not perform the expected operations due to their desynchronization.
 
 
 
@@ -552,9 +504,11 @@ This problem was resolved by configuring an SSL connection on port 8002 for the 
 
 The following commands can be used in a scenario :
 
-- ***eteindre*** : switch off Tv 
+
 
 - ***mute***     : mute mode (toggle)
+
+- ***off***          : switch off Tv 
 
 - ***on_off***   : switch tv on/off (toggle).
 
@@ -1013,7 +967,7 @@ Here is the list of Smart Tvs supported by the plugin:
 
 * Since October 2018, Tizen models with connection on port 8002 in SSL.
 
-* Some models are not supported, 
+* Some models are not supported, see list above
 
 * WOL support (wake on lan, TV switch on from the network)
 
