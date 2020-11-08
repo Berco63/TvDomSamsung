@@ -1,5 +1,30 @@
 # **Change Log**
 
+# 1.0.L Version du 08/11/2020
+
+- Refactorisatiuon du code,
+- Ajout d'une commande **Off** qui permet d'éteindre la Smart Tv depuis un scénario.
+- Correction bug sur gestion du WOL ( wake on lan).
+
+# 1.0.L Version du 27/04/2020
+
+- Code refactoring
+- Addition of an 'Off' command to turn off the television from a scenario,
+- Bug fix on Wake on lan (WOL) processing,
+- For the WOL parameter, operation either in direct mode on the television IP or in broadcast mode, in this case enter the subnet mask.
+
+# 1.0.K Version du 27/04/2020
+
+- Improvement of the remote control display according to the media used: PC, tablet or mobile phone.
+
+# 1.0.J Version du 13/03/2020
+
+- Fixed widget display: dashboard and design.
+
+- Allow to resize and place the widget on a design.
+
+  
+
 # 1.0.I Version Beta
 
 - Addition of a latency parameter for sending key sequence from a scenario.
