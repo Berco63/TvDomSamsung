@@ -18,9 +18,7 @@ L'écran de configuration du plugin se présente ainsi :
 
 
 
-![plugin-001](../images/TvDomSamsung-image-0.png)
-
-
+![plugin-001](../images/TvDomSamsung-image-14.png)
 
 
 
@@ -28,9 +26,20 @@ Le panneau de configuration comprend notamment :
 
 - la gestion des dépendances,
 - la gestion du daemon propre aux modèles Samsung J,
+- les paramètres propres à la configuration de la télécommande,
 - les paramètres essentiels du daemon.
 
 Je ne présenterai pas,ici les détails des deux premiers panneaux : dépendance et daemon.
+
+Les paramètres de la télécommande sont les suivants:
+
+- Indication de la dimension souhaitée d'affichage de la télécommande pour un PC ou une tablette. Indiquer, ici, les dimensions (largeur|hauteur) . Fournir deux nombres séparés par le symbole '|'.
+
+- Indication de la dimension souhaitée d'affichage de la télécommande pour un téléphone mobile. Indiquer, ici, les dimensions (largeur|hauteur) . Fournir deux nombres séparés par le symbole '|'.
+
+L'écran de saisie se présente ainsi:
+
+![plugin-002](../images/TvDomSamsung-image-13.png)
 
 
 
@@ -50,15 +59,15 @@ Une fois la saisie réalisée, sauvegardez les paramètres.
 
 Voici la présentation de la configuration du plugin pour les modèles de Smart TV autres que le modèle J.
 
-![plugin-002](../images/TvDomSamsung-image-0-1.png)
+![plugin-002](../images/TvDomSamsung-image-15.png)
 
 
 
-La différence notable se situe au niveau de la du choix ; **Daemon actif** qui n'est pas coché.
+La différence notable se situe au niveau du choix ; **Daemon actif** qui n'est pas coché.
 
 
 
-Après avoir installé le plugin, il vous faut créer une occurrence en cliquant dans le menu plugin sur le sous-menu multimédia, puis Tv DomSamsung.
+Après avoir installé le plugin, il vous faut créer une occurrence en cliquant dans le menu plugin sur le sous-menu multimédia, puis TvDomSamsung.
 
 
 
@@ -148,21 +157,23 @@ Pour l'instant seules deux séries sont définies. La boîte de sélection perme
 
 - ***Commandes/Actions***
 
-  Six commandes sont définies, elles permettent de piloter la SMART TV dans des scénarios.
+    Sept commandes sont définies, elles permettent de piloter la SMART TV dans des scénarios.
 
   `Activer` : sert uniquement à associer le widget sur le dashboard
 
-   Eteindre : commande d'extinction du téléviseur
+  `Auth` : Cette commande permet d'initier la séquence d'autorisation de la télécommande par le téléviseur. Elle est en principe réservée et activée depuis la télécommande du plugin. Ne concerne que les modèles de téléviseur du type LEGACY.
 
   `Mute` : permet de passer la Smart TV en mode silencieux (volume du son à 0). Un deuxième envoi repositionne le son au volume sonore précédent.
 
-  `Zap` : Cette action provoque un changement de chaîne. Pour cela, il suffit d'indiquer en paramètre le n° de la chaîne à sélectionner. Ce n° de chaîne doit être compris entre 1 et 99. La commande n'a aucun effet si aucun canal ne correspond au n° de chaîne entré.
+  `Off` : Cette commande permet d'éteindre le téléviseur depuis un scénario.
+
+  `OnOff` : commande d'allumage ou d'extinction du téléviseur suivant le cas.
 
   `SendKey` : Cette commande est utilisée dans les scénarios. voir annexe_scenario, pour plus de précision sur l'utilisation de cette commande.
 
-  `Auth` : Cette commande permet d'initier la séquence d'autorisation de la télécommande par le téléviseur. Elle est en principe réservée et activée depuis la télécommande du plugin. Ne concerne que les modèles de téléviseur du type LEGACY.
+  `Zap` : Cette action provoque un changement de chaîne. Pour cela, il suffit d'indiquer en paramètre le n° de la chaîne à sélectionner. Ce n° de chaîne doit être compris entre  1 et 99. La commande n'a aucun effet si aucun canal ne correspond au n° de chaîne entré.
 
-  > Pour que le plugin fonctionne correctement, toutes les zones doivent être renseignées .
+> Pour que le plugin fonctionne correctement, toutes les zones doivent être renseignées .
 
 Puis, enregistrez la configuration complète de l'équipement.
 
@@ -207,6 +218,10 @@ Le panneau de configuration d'un modèle Tizen se présente ainsi :
 
   > A utiliser conjointement avec le port 8002.
 
+- **WOL**
+
+  Indicateur servant à allumer la télévision depuis la réseau. Attention, cette option n'est pas disponible sur tous les modèles Tizen. Cocher l'option **Direct** si le signal est adressé sur l'adresse IP du téléviseur, ou **Broadcast** si l'envoi est fait sur tout le réseau. Dans ce cas, saisir le masque de sous réseau assoxié.
+
 - ***Application TV***
 
   C'est un code applicatif libre. Ici, j'ai renseigné  *jeedom.tizen.app.samsung*.
@@ -233,20 +248,22 @@ Le panneau de configuration d'un modèle Tizen se présente ainsi :
 
 - ***Commandes/Actions***
 
-  Six commandes sont définies, elles permettent de piloter la SMART TV dans des scénarios.
+  Sept commandes sont définies, elles permettent de piloter la SMART TV dans des scénarios.
 
   `Activer` : sert uniquement à associer le widget sur le dashboard
 
-   Eteindre : commande d'extinction du téléviseur
+  `Auth` : Cette commande permet d'initier la séquence d'autorisation de la télécommande par le téléviseur. Elle est en principe réservée et activée depuis la télécommande du plugin. Ne concerne que les modèles de téléviseur du type LEGACY.
 
   `Mute` : permet de passer la Smart TV en mode silencieux (volume du son à 0). Un deuxième envoi repositionne le son au volume sonore précédent.
 
-  `Zap` : Cette action provoque un changement de chaîne. Pour cela, il suffit d'indiquer en paramètre le n° de la chaîne à sélectionner. Ce n° de chaîne doit être compris entre 1 et 99. La commande n'a aucun effet si aucun canal ne correspond au n° de chaîne entré.
+  `Off` : Cette commande permet d'éteindre le téléviseur depuis un scénario.
+
+  `OnOff` : commande d'allumage ou d'extinction du téléviseur suivant le cas.
 
   `SendKey` : Cette commande est utilisée dans les scénarios. voir annexe_scenario, pour plus de précision sur l'utilisation de cette commande.
 
-  `Auth` : Cette commande permet d'initier la séquence d'autorisation de la télécommande par le téléviseur. Elle est en principe réservée et activée depuis la télécommande du plugin. Ne concerne que les modèles de téléviseur du type LEGACY.
-
+  `Zap` : Cette action provoque un changement de chaîne. Pour cela, il suffit d'indiquer en paramètre le n° de la chaîne à sélectionner. Ce n° de chaîne doit être compris entre 1 et 99. La commande n'a aucun effet si aucun canal ne correspond au n° de chaîne entré.
+  
   > Pour que le plugin fonctionne correctement, toutes les zones doivent être renseignées .
 
 Puis, enregistrez la configuration complète de l'équipement.
