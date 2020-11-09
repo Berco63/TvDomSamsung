@@ -980,4 +980,6 @@ Voici la liste des Smart Tv supportées par le plugin :
 
 # Changelog détaillé
 
->https://berco63.github.io/TvDomSamsung/fr_FR/changelog
+https://berco63.github.io/TvDomSamsung/fr_FR/changelog
+
+[https://www.google.com](https://bc.com)
