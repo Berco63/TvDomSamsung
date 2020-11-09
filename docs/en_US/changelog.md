@@ -27,7 +27,7 @@
 
 - Typo corrections for  I18n files
 
-# 1.0.G 
+# 1.0.G Version Beta 31/12/2019 
 
 - Widget upgrade in accordance with jeedom V4
 -  Fixed bug related to deletion of the object entity replaced by jeeObject
