@@ -1,12 +1,17 @@
 # Change Logs
 
+# 1.0.M Version du 31/01/2021
+
+- Correction bug sur le traitement du Wake on lan (WOL), 
+- Pour le paramètre WOL, fonctionnement soit en mode direct sur une IP broadcast soit en mode broadcast , dans ce cas renseigner le masque de sous-réseau qui permettra de calculer une adresse de broadcast sur le réseau local à partir de l'adresse IP de la Tv.
+- Changement de l'icone du plugin.
+
 # 1.0.L Version du 08/11/2020
 
 - Refactorisation du code 
 - Ajout d'une commande '**Off**' afin d'éteindre la télévision depuis un scénario,
 - Correction bug sur le traitement du Wake on lan (WOL), 
 - Pour le paramètre WOL, fonctionnement soit en mode direct sur l'IP de la télévision soit en mode broadcast , dans ce cas renseigner le masque de sous-réseau.
-  
 
 # 1.0.K Version du 27/04/2020
 

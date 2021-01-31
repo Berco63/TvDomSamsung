@@ -1,5 +1,11 @@
 # **Change Log**
 
+# 1.0.M Version du 31/01/2021
+
+- Bug fix on Wake on lan (WOL) processing,
+- For the WOL parameter, operation either in direct mode on a broadcast IP or in broadcast mode, in this case, enter the subnet mask which will make it possible to calculate a broadcast address on the local network from the IP address of the television
+- Change of the plugin icon. 
+
 # 1.0.L Version du 08/11/2020
 
 - Code refactoring
