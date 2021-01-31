@@ -216,7 +216,9 @@ Le panneau de configuration d'un modèle Tizen se présente ainsi :
 
 - **WOL**
 
-  Indicateur servant à allumer la télévision depuis la réseau. Attention, cette option n'est pas disponible sur tous les modèles Tizen. Cocher l'option **Direct** si le signal est adressé sur l'adresse IP du téléviseur, ou **Broadcast** si l'envoi est fait sur tout le réseau. Dans ce cas, saisir le masque de sous réseau associé.
+  Indicateur servant à allumer la télévision depuis la réseau. Attention, cette option n'est pas disponible sur tous les modèles Tizen. 
+
+  Cocher l'option **Direct**  et renseigner une adresse IP de broadcast , ou cocher **Broadcast** si l'envoi est fait sur tout le réseau. Dans ce cas, saisir le masque de sous réseau associé.
 
 - ***Application TV***
 

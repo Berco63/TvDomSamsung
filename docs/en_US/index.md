@@ -217,7 +217,7 @@ The configuration panel of a Tizen model looks like this :
 
   (Please note, this option is not available on all Tizen models.)
 
-  Check the option **Direct** if the signal is sent to the TV's IP address, or **Broadcast**  if the sending is done over the entire network. In this case, enter the associated subnet mask.
+  Check the **Direct**  option and enter a broadcast IP address, or check ** **Broadcast** ** if the sending is done over the entire network. In this case, enter the associated subnet mask. 
 
 - ***Application TV***
 
