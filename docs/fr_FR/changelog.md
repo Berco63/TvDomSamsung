@@ -1,5 +1,10 @@
 # Change Logs
 
+# 1.0.N Version du 23/05/2023
+
+- Mise à niveau Debian 11 (Bullseye) et python3
+- Révision fenêtre configuration du plugin
+
 # 1.0.M Version du 31/01/2021
 
 - Correction bug sur le traitement du Wake on lan (WOL), 
