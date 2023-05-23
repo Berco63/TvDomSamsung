@@ -14,7 +14,39 @@ Le plugin TvDomSamsung sert à piloter une TV Samsung (*smart, connectée*) acce
 
 Le plugin dans sa version 1.0.D nécessite d'être configuré. Pour cela activer le menu **Plugins -> Gestion des plugins**, puis cliquer sur l'icone du plugin TvDomSamsung.![plugin-000](../images/TvDomSamsung_icon.png)
 
-L'écran de configuration du plugin se présente ainsi :
+L'écran de configuration du plugin se présente suivant deux variantes :
+
+​	<u>Variante n° 1:</u> Samsung Smart Tv Legacy ou Tizen ( autres que modèles J)
+
+​    Dans cette variante, le plugin fonctionne sans démon et ne nécessite donc pas d'installer des dépendances ni par ailleurs de lancer un démon.
+
+​	L'écran de configuration se présente ainsi:
+
+
+
+![TvDomSamsung-image-16-0](F:\Developpement\TvDomsang.git\TvDomSamsung\docs\images\TvDomSamsung-image-16-0.png)
+
+Le panneau de configuration comprend notamment :
+
+- les paramètres propres à la configuration de la télécommande sont les suivants,
+
+  - Indication de la dimension souhaitée d'affichage de la télécommande pour un PC ou une tablette. Indiquer, ici, les dimensions (largeur|hauteur) . Fournir deux nombres séparés par le symbole '|'.
+
+  - Indication de la dimension souhaitée d'affichage de la télécommande pour un téléphone mobile. Indiquer, ici, les dimensions (largeur|hauteur) . Fournir deux nombres séparés par le symbole '|'.
+
+- le paramètre d'activation pour les modèles J. 
+
+  Par défaut le plugin présente lors de son installation une panneau de configuration pour les modèles Legacy ou Tizen. 
+
+  **Si vous souhaitez configurer une Smart Tv modèle J** , il faut cocher la case **Daemon actif** et afin d'avoir accès aux paramètres détaillés  de la configuration d'un modèle J. L'écran est présenté dans la variante n° 2 (ci-dessous).
+
+  
+
+<u>Variante n° 2:</u> Samsung Smart Tv modèles J
+
+​    Dans cette variante, le plugin fonctionne en utilisant un démon qui sert d'interface entre le plugin et la Smart Tv. Il est alors nécessaire d'installer des 	dépendances puis  de lancer le démon.
+
+​	L'écran de configuration se présente ainsi:
 
 
 
@@ -29,20 +61,6 @@ Le panneau de configuration comprend notamment :
 - les paramètres propres à la configuration de la télécommande,
 - les paramètres essentiels du daemon.
 
-Je ne présenterai pas,ici les détails des deux premiers panneaux : dépendance et daemon.
-
-Les paramètres de la télécommande sont les suivants:
-
-- Indication de la dimension souhaitée d'affichage de la télécommande pour un PC ou une tablette. Indiquer, ici, les dimensions (largeur|hauteur) . Fournir deux nombres séparés par le symbole '|'.
-
-- Indication de la dimension souhaitée d'affichage de la télécommande pour un téléphone mobile. Indiquer, ici, les dimensions (largeur|hauteur) . Fournir deux nombres séparés par le symbole '|'.
-
-L'écran de saisie se présente ainsi:
-
-![plugin-002](../images/TvDomSamsung-image-13.png)
-
-
-
 Les paramètres du daemon sont les suivants:
 
 - Temps de pause : délai nécessaire entre l'envoi d'une séquence de commandes au téléviseur. (Utilisé par la commande sendKey dans un scénario par exemple).
@@ -53,17 +71,16 @@ Les paramètres du daemon sont les suivants:
 - Connexion time out. (idem).
 - Niveau de log. En fonctionnement normal, afin de minimiser le volume des logs, positionner le niveau sur INFO.
 
-Une fois la saisie réalisée, sauvegardez les paramètres.
+Une fois la saisie réalisée, sauvegardez les paramètres du panneau de configuration. Puis, dans l'ordre :
 
-Voici la présentation de la configuration du plugin pour les modèles de Smart TV autres que le modèle J.
-
-![plugin-002](../images/TvDomSamsung-image-15.png)
-
+- Lancer les dépendances.
+- Démarrer le démon.
 
 
-La différence notable se situe au niveau du choix : **Daemon actif** qui n'est pas coché.
 
-Après avoir installé le plugin, il vous faut créer une occurrence en cliquant dans le menu plugin sur le sous-menu multimédia, puis TvDomSamsung.
+
+
+**Après avoir installé le plugin, il vous faut créer une occurrence en cliquant dans le menu plugin sur le sous-menu multimédia, puis TvDomSamsung.**
 
 
 

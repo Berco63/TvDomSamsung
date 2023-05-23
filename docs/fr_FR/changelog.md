@@ -3,7 +3,7 @@
 # 1.0.N Version du 23/05/2023
 
 - Mise à niveau Debian 11 (Bullseye) et python3
-- Révision fenêtre configuration du plugin
+- Révision fenêtre configuration du plugin : paramétrage démon, dépendances et lancement
 
 # 1.0.M Version du 31/01/2021
 

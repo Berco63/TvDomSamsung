@@ -1,5 +1,10 @@
 # **Change Log**
 
+# 1.0.N Version du 23/05/2023
+
+- Debian 11 (Bullseye) and python3 upgrade
+- Revision plugin configuration window: daemon settings, dependencies and launch.
+
 # 1.0.M Version du 31/01/2021
 
 - Bug fix on Wake on lan (WOL) processing,
