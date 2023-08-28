@@ -1,9 +1,17 @@
 # Change Logs
 
+<<<<<<< Updated upstream
 # 1.0.N Version du 23/05/2023
 
 - Mise à niveau Debian 11 (Bullseye) et python3
 - Révision fenêtre configuration du plugin : paramétrage démon, dépendances et lancement
+=======
+# 1.1.A Version du 28/08/2023
+
+
+- Suppression de la prise en charge des modèles J, suite à mise place de Python 3.9
+- Modification de l'affichage du plugin pour le mode mobile
+>>>>>>> Stashed changes
 
 # 1.0.M Version du 31/01/2021
 
